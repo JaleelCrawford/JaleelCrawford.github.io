@@ -1,0 +1,66 @@
+body{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+  background-image: url('riddle.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rules{
+  text-align: left;
+  color: white;
+}
+
+.title{
+  color: purple;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: red;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: rgb(138, 0, 0);
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.h3{
+  background-color: purple;
+}
+/*Jalen*/
+.selectionbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.riddles{
+  color: white;
+}
+
+.background{
+  background-color: red;
+}

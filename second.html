@@ -22,45 +22,31 @@
 </head>
 
 <body>
-	<script src="script.js">
+	<script src="script.js"></script>
 
-	</script>
-
-	<h1 style="color: red">Countdown Clock</h1>
-	<div id="clockdiv">
-		<div>
-			<span id="minutes" class="minutes"></span>
-      <div class="smalltext">Minutes</div>
-    </div>
-    <div>
-      <span id="seconds" class="seconds"></span>
-      <div class="smalltext">Seconds</div>
+  <div class="clock">
+	  <h1 style="color: red">Countdown Clock</h1>
+	  <div id="clockdiv">
+		  <div>
+			  <span id="minutes" class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span id="seconds" class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
     </div>
   </div>
 
-  <!-- <div class="carousel carousel-slider center">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
-  </div> -->
+		<div class="carousel carousel-slider center" style="height: 100vh;">
 
-  <div class="riddles">
+    <div class="carousel-fixed-item center">
+			<a id="hintButton" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a>
+    </div>
+
+    <div class="1" id="1">
+    <a class="carousel-item green white-text" href="#one!">
+    <h2>Riddle 1</h2>
 		<div class="q1">
 			<p>Mr. and Mrs. Mustard have six daughters and each daughter has one brother. How many people are in the Mustard family?</p>
 			<div class="row">
@@ -68,201 +54,277 @@
 					<div class="input-field col s12">
 						<textarea id="textarea1" class="materialize-textarea"></textarea>
             <label for="textarea1">Answer</label>
-            <button id="submit1" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton1" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">Count Everyone<p>
+            <p id="hint1" style="background-color: black;">Count Everyone</p>
+            <p><button id="submit1" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span"></span></h2>
           </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="2" id="2">
+    <a class="carousel-item green white-text" href="#two!">
+    <h2>Riddle 2</h2>
 		<div class="q2">
 			<p> If you know me, you'll want to share me. But if you share me, I'll be gone. What am I? </p>
       <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
+				<form class="col s4 offset-s4">					
+						<div class="input-field col s12">
 							<textarea id="textarea2" class="materialize-textarea"></textarea>
               <label for="textarea2">Answer</label>
-              <button id="submit2" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton2" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">  <p>
+              <p id="hint2" style="background-color: black;">I can be whispered to someone.<p>
+              <p><button id="submit2" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+              <h2><span id="span2"></span></h2>
+            
             </div>          
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="3" id="3">
+    <a class="carousel-item green white-text" href="#three!">
+    <h2>Riddle 3</h2>
 		<div class="q3">
-			<p> The more there is, the less you see. What could I be? </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea3" class="materialize-textarea"></textarea>
-              <label for="textarea3">Answer</label>
-              <button id="submit3" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton3" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;"> When shrouded in it completely, you can't see. <p>
-            </div>          
+			<p>The more there is, the less you see. What could I be?</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea3" class="materialize-textarea"></textarea>
+            <label for="textarea3">Answer</label>
+            <p id="hint3" style="background-color: black;">When shrouded in it completely, you can't see.</p>
+            <p><button id="submit3" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span3"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="4" id="4">
+    <a class="carousel-item green white-text" href="#four!">
+    <h2>Riddle 4</h2>
 		<div class="q4">
-			<p> I am not alive but I have five fingers. </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea4" class="materialize-textarea"></textarea>
-              <label for="textarea4">Answer</label>
-              <button id="submit4" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton4" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;"> I am worn when it's cold. <p>
-            </div>          
+			<p>I am not alive but I have five fingers.</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea4" class="materialize-textarea"></textarea>
+            <label for="textarea4">Answer</label>
+            <p id="hint4" style="background-color: black;">My hand won't get dirty.</p>
+            <p><button id="submit4" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span4"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="5" id="5">
+    <a class="carousel-item green white-text" href="#five!">
+    <h2>Riddle 5</h2>
 		<div class="q5">
-			<p> Who is that with a neck and no head, two arms and no hands?  What is it? </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea5" class="materialize-textarea"></textarea>
-              <label for="textarea5">Answer</label>
-              <button id="submit5" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton5" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;"> Count Everyone <p>
-            </div>          
+			<p>I have a neck and no head, two arms and no hands?  What am I?</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea5" class="materialize-textarea"></textarea>
+            <label for="textarea5">Answer</label>
+            <p id="hint5" style="background-color: black;">Covers an upper body</p>
+            <p><button id="submit5" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span5"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="6" id="6">
+    <a class="carousel-item green white-text" href="#six!">
+    <h2>Riddle 6</h2>
 		<div class="q6">
-			<p> I only exist when there is light, but direct light kills me. </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea6" class="materialize-textarea"></textarea>
-              <label for="textarea6">Answer</label>
-              <button id="submit6" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton6" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;"> Count Everyone <p>
-            </div>          
+			<p>I only exist when there is light, but direct light kills me.</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea6" class="materialize-textarea"></textarea>
+            <label for="textarea6">Answer</label>
+            <p id="hint6" style="background-color: black;">I am a reflection of you</p>
+            <p><button id="submit6" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span6"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="7" id="7">
+    <a class="carousel-item green white-text" href="#seven!">
+    <h2>Riddle 7</h2>
 		<div class="q7">
-			<p> I travel around the world while staying in the same corner. </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea7" class="materialize-textarea"></textarea>
-              <label for="textarea7">Answer</label>
-              <button id="submit7" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton7" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;"> Count Everyone <p>
-            </div>          
+			<p>I travel around the world while staying in the same corner.</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea7" class="materialize-textarea"></textarea>
+            <label for="textarea7">Answer</label>
+            <p id="hint7" style="background-color: black;">I'm attached to envelops</p>
+            <p><button id="submit7" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span7"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="8" id="8">
+    <a class="carousel-item green white-text" href="#eight!">
+    <h2>Riddle 8</h2>
 		<div class="q8">
-			<p> What English word retains the same pronunciation, even after you take away four of its five letters? </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea8" class="materialize-textarea"></textarea>
-              <label for="textarea8">Answer</label>
-              <button id="submit8" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton8" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">It rhymes with a letter.<p>
-            </div>         
+			<p>What English word retains the same pronunciation, even after you take away four of its five letters?</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea8" class="materialize-textarea"></textarea>
+            <label for="textarea8">Answer</label>
+            <p id="hint8" style="background-color: black;">It rhymes with a letter</p>
+            <p><button id="submit8" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span8"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="9" id="9">
+    <a class="carousel-item green white-text" href="#nine!">
+    <h2>Riddle 9</h2>
 		<div class="q9">
-			<p> There's one "sport" in which neither the spectators nor the participants know the score or the leader until the contest ends. </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea9" class="materialize-textarea"></textarea>
-              <label for="textarea9">Answer</label>
-              <button id="submit9" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton9" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">Gloves are necessary.<p>
-            </div>         
+			<p>There's one "sport" in which neither the spectators nor the participants know the score or the leader until the contest ends.</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea9" class="materialize-textarea"></textarea>
+            <label for="textarea9">Answer</label>
+            <p id="hint9" style="background-color: black;">Gloves are necessary</p>
+            <p><button id="submit9" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span9"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-    <br>
-
+    <div class="10" id="10">
+    <a class="carousel-item green white-text" href="#ten!">
+    <h2>Riddle 10</h2>
 		<div class="q10">
-			<p> What is yours but is used more often by your friends and family? </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea10" class="materialize-textarea"></textarea>
-              <label for="textarea10">Answer</label>
-              <button id="submit10" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton10" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">You are given this by your parents.<p>
-            </div>         
+			<p>What is yours but is used more often by your friends and family?</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea10" class="materialize-textarea"></textarea>
+            <label for="textarea10">Answer</label>
+            <p id="hint10" style="background-color: black;">You are given this by your parents</p>
+            <p><button id="submit10" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span10"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-  <div class="q11 ">
-			<p> If eleven plus two equals one, what does nine plus five equal? </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea11" class="materialize-textarea"></textarea>
-              <label for="textarea11">Answer</label>
-              <button id="submit11" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton11" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">Look a your watch<p>
-            </div>         
+    <div class="11" id="11">
+    <a class="carousel-item green white-text" href="#eleven!">
+    <h2>Riddle 11</h2>
+		<div class="q11">
+			<p>If eleven plus two equals one, what does nine plus five equal?</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea11" class="materialize-textarea"></textarea>
+            <label for="textarea11">Answer</label>
+            <p id="hint11" style="background-color: black;">Look at your watch</p>
+            <p><button id="submit11" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span11"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
 
-  <div class="q12">
-			<p> If 4 and 2 = 26, 8 and 1 = 79 and 6 and 5 = 111. Then, what does 7 and 3 equal? </p>
-      <div class="row">
-				<form class="col s6 offset-s4">					
-						<div class="input-field col s9">
-							<textarea id="textarea12" class="materialize-textarea"></textarea>
-              <label for="textarea12">Answer</label>
-              <button id="submit12" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
-            <p><a id="hintButton12" class="btn-floating waves-effect waves-light purple"><i class="material-icons">help</i></a></p>
-            <p id="hint1" style="background-color: black;">The first digit of the answer is the difference of the two numbers<p>
-            </div>        
+    <div class="12" id="12">
+    <a class="carousel-item green white-text" href="#twelve!">
+    <h2>Riddle 12</h2>
+		<div class="q12">
+			<p>If 4 and 2 = 26, 8 and 1 = 79 and 6 and 5 = 111. Then, what does 7 and 3 equal?</p>
+			<div class="row">
+				<form class="col s4 offset-s4">
+					<div class="input-field col s12">
+						<textarea id="textarea12" class="materialize-textarea"></textarea>
+            <label for="textarea12">Answer</label>
+            <p id="hint12" style="background-color: black;">The first digit of the answer is the difference of the two numbers</p>
+            <p><button id="submit12" class="btn waves-effect black waves-light" type="submit" name="action">Submit</button></p>
+            <h2><span id="span12"></span></h2>
+          </div>
         </form>
       </div>
 		</div>
+    </a>
+    </div>
+
+    </div>
+
+  <div id = "win" class = "hide">
+    <div class="row">
+    <div class="col s12 m6">
+      <div class="card green">
+        <div class="card-content white-text">
+          <span class="card-title">Congradulations</span>
+          <p>You have completed the first room. But this is only the beginning. Move on to the next room.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://xatnagh.github.io/">Next room</a>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
-	<div class="selectionbtn">
+  <div id = "lose" class = "hide">
+    <div class="row">
+    <div class="col s12 m6">
+      <div class="card red">
+        <div class="card-content white-text">
+          <span class="card-title">Time Has Run Out</span>
+          <p>Unfortunatley you did not complete the room in time. Start from the beginning again to try to get passed this room.</p>
+        </div>
+        <div class="card-action">
+          <a href="second.html">Try Again</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>    
+
+<!--  -->
+
+
+	<!--   <div class="selectionbtn">
 		<a href="index.html" class="waves-effect waves-light btn purple ">Main Menu</a>
-	</div>
+	</div>   -->
 
 </body>
 
